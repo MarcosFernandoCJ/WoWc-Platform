@@ -14,7 +14,7 @@
     </x-authentication-header>
 
     <x-authentication-card>
-
+        <h1 class="text-3xl text-center pb-4 text-yellow-600 font-bold">Iniciar sesión</h1>
         <x-validation-errors class="mb-4" />
 
         @session('status')
