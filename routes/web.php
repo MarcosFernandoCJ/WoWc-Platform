@@ -10,7 +10,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/layouts/board', function () {
+        return view('/layouts/board');
+    })->name('/layouts/board');
 });
