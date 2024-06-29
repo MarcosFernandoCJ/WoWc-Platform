@@ -6,7 +6,8 @@
         <section class="w-full">
             <div class="absolute bottom-0 w-full z-10">
                 <div class="flex flex-row-reverse w-full p-0 xl:pr-16 justify-center xl:justify-normal">
-                    <div class="flex flex-col p-8 rounded-t-3xl bg-accent gap-4 bg-opacity-95 text-white text-center xl:text-left">
+                    <div
+                        class="flex flex-col p-8 rounded-t-3xl bg-accent gap-4 bg-opacity-95 text-white text-center xl:text-left">
                         <h1 class="text-7xl font-extrabold">World of Warclass</h1>
                         <p class="text-3xl font-medium">Transformando tareas en verdadero aprendizaje</p>
                     </div>
@@ -18,10 +19,10 @@
 
     </div>
 
-    <section class="bg-base-100 p-32 mx-auto flex flex-col gap-16 w-full">
-
-        <article class="flex flex-col-reverse lg:flex-row gap-x-0 gap-y-8 lg:gap-x-16 lg:gap-y-0 text-2xl items-center">
-            <div class="flex-1 flex flex-col gap-8">
+    <section class="bg-base-100 p-32 mx-auto flex flex-col gap-16 w-full max-w-[100vw] h-full">
+        <article
+            class="flex flex-col-reverse lg:flex-row gap-x-0 gap-y-8 lg:gap-x-16 lg:gap-y-0 text-2xl items-center w-full h-full">
+            <div class="flex-1 flex flex-col gap-8 w-1/2 h-full">
                 <section class="flex flex-col gap-4">
                     <h2 class="text-5xl font-bold">¿Qué es "World of Warclass"?</h2>
                     <p>Plataforma educativa innovadora que motiva a los estudiantes mediante misiones temáticas y
@@ -39,9 +40,8 @@
                     </ul>
                 </section>
             </div>
-            <div class="flex-1">
-                <img src="https://cdn.discordapp.com/attachments/1224189197406044311/1239651035543240714/Home-WC.png?ex=6643b27e&is=664260fe&hm=de9dda3ed995cfad5bcd80821f9be167fc7cdf7120e8ef80870771907d19670e&"
-                    alt="">
+            <div class="flex justify-center flex-1 w-1/2 h-full aspect-square">
+                <canvas id="canvas" class=""></canvas>
             </div>
         </article>
     </section>

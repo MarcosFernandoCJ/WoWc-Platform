@@ -17,8 +17,8 @@
 
 </head>
 
-<body class="flex flex-col min-h-screen">
-    <div class="min-h-screen flex flex-col text-base-content antialiased">
+<body class="flex flex-col min-h-screen h-full">
+    <div class="min-h-screen flex flex-col text-base-content antialiased h-full">
         {{ $slot }}
     </div>
 
