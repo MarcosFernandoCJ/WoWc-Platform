@@ -33,7 +33,7 @@ Route::view('/students-perfil', 'layouts/board-estudents/board-perfil');
 Route::view('/students-home', 'layouts/board-estudents/board-home');
 
 //! Teacher/Master 
-Route::view('/profesor-create-clase', 'layouts/board-profesor/board-create-clase');
+Route::view('/profesor-create-group', 'layouts/board-profesor/board-create-group');
 
 
 // Profesor pruebas con middleware 
