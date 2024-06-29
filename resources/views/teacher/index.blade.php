@@ -11,21 +11,22 @@
 <body class="flex h-screen bg-white">
     <div class="bg-white-400 flex w-full justify-center items-center">
                 
-                <div class="px-3 py-4 flex w-8/12 bg-red-400 flex-col items-center">
+                <div class="px-3 py-4 flex w-8/12 border-2 border-black flex-col items-center">
 
                     {{-- content-title --}}
-                    <div class="p-3 flex justify-between w-11/12 items-center ">
+                    <div class="p-3 flex justify-between w-11/12 items-center border-b-2 border-black">
                         
                             <span class="text-2xl text-black ">
                                 {{ __('Teachers') }}
                             </span>
                             <div class="">
-                                <a href="{{ route('teachers.create') }}" class=" text-md bg-blue-500 hover:bg-blue-700 text-white p-2 rounded focus:outline-none focus:shadow-outline">
+                                <a href="{{ route('teachers.create') }}" class=" btn bg-yellow-500 hover:bg-yellow-400 text-black border-2">
                                 {{ __('Create New') }}
                                 </a>
                             </div>
                         
                     </div>
+                    
                     {{-- content-title --}}
                     
                     @if ($message = Session::get('success'))
@@ -38,13 +39,15 @@
                     
                     <div class="rounded-sm flex w-full items-center overflow-x-scroll">
                         
-                            <table class="w-full text-md bg-white shadow-md rounded">
+                            <table class="w-full text-md shadow-md">
                                 <thead class="border-b text-black">
                                     <tr>
                                         
 									<th class="text-left p-3 px-5" >Teacher</th>
 									<th class="text-left p-3 px-5">Email</th>
 									<th class="text-left p-3 px-5">Institution</th>
+									<th class="text-left p-3 px-5">Acciones</th>
+
                                         <th></th>
                                     </tr>
                                 </thead>

@@ -93,7 +93,7 @@
         
         
     </main>
-    <pre>{{Auth::user()}}</pre>
+    {{-- <pre>{{Auth::user()}}</pre> --}}
     <x-script-board>
         
     </x-script-board>

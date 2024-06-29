@@ -8,8 +8,10 @@ class QuizController extends Controller
 {
     public function index()
     {
+         
         $quizzes = Quiz::inRandomOrder()->take(10)->get();
-        return view('/quizzes/index', compact('quizzes'));   
+        return view('/quizzes/index', compact('quizzes'));
+          
     }
 
     public function check(Request $request){
