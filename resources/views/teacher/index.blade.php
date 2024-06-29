@@ -58,7 +58,6 @@
                                             <td class="p-3 px-5 text-left">
                                                 <form action="{{ route('teachers.destroy', $teacher->id) }}" method="POST" class="flex flex-row justify-center items-center mb-0 gap-4" >
                                                     <a class="bg-yellow-200 hover:bg-yellow border-2 border-black rounded-md p-2" href="{{ route('teachers.show', $teacher->id) }}"><span class="icon-[bx--show]"></span></a>
-                                                    <a class="bg-green-200 hover:bg-green-700 border-2 border-black rounded-md p-2" href="{{ route('teachers.edit', $teacher->id) }}"><span class="icon-[carbon--edit]"></span></a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="bg-red-500 hover:bg-red-700 border-2 border-black rounded-md p-2" onclick="event.preventDefault(); confirm('Are you sure to delete?') ? this.closest('form').submit() : false;"><span class="icon-[mi--delete]"></span></button>

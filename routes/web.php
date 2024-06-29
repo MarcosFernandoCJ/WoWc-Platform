@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\QuizController;
 
 Route::get("/",HomeController::class);
 
@@ -53,3 +54,8 @@ Route::view('/register-institution', 'layouts.register.register-institutions')->
 
 // otros
 Route::resource('teachers', TeacherController::class)->middleware('auth:secondary');
+
+//test-quizzes
+Route::get('/quizzes',[QuizController::class,'index'])->name('indexquiz');
+Route::get('/quizzes/result', [QuizController::class, 'result'])->name('quizzes.score');
+Route::post('/quizzes/check', [QuizController::class, 'check'])->name('quizzes.check');

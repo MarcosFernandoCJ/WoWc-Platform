@@ -61,28 +61,6 @@ class TeacherController extends Controller
         return view('teacher.show', compact('teacher','institutionId','users'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit($id): View
-    {
-        $teacher = Teacher::find($id);
-        $users = User::all();
-        $institutionId = Auth::user()->id;
-        return view('teacher.edit', compact('teacher','institutionId','users'));
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(TeacherRequest $request, Teacher $teacher): RedirectResponse
-    {
-        $teacher->update($request->validated());
-
-        return Redirect::route('teachers.index')
-            ->with('success', 'Teacher updated successfully');
-    }
-
     public function destroy($id): RedirectResponse
     {
         Teacher::find($id)->delete();
